@@ -5,6 +5,6 @@ class Program{
     }
 
     void play(){
-        
+        String game ="Cricket";
     }
 }
