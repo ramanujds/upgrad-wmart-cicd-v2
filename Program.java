@@ -6,5 +6,6 @@ class Program{
 
     void play(){
         Cricket cricketGame = new Cricket();
+        cricketGame.play();
     }
 }
