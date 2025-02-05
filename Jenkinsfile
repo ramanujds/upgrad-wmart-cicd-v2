@@ -36,7 +36,7 @@ pipeline {
                 // failed, record the test results and archive the jar file.
                 success {
                     junit '**/target/surefire-reports/TEST-*.xml'
-                    archiveArtifacts 'spring-boot-app/target/*.jar'
+                    archiveArtifacts 'my-spring-boot-app/target/*.jar'
                 }
             }
         }
