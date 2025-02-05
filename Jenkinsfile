@@ -17,7 +17,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests'
-                dir('spring-boot-app') {
+                dir('my-spring-boot-app') {
                    sh "mvn test"
                 }
             }
@@ -26,7 +26,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the application'
-                dir('spring-boot-app') {
+                dir('my-spring-boot-app') {
                    sh "mvn clean package"
                 }
             }
